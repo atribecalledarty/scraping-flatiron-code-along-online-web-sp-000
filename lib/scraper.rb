@@ -5,8 +5,10 @@ require 'pry'
 require_relative './course.rb'
 
 class Scraper
-  
-  doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+  def get_page
+    doc = Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+    binding.pry
+  end
   
   def print_courses
     self.make_courses
