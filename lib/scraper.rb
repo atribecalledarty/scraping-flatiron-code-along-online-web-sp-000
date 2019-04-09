@@ -6,7 +6,7 @@ require_relative './course.rb'
 
 class Scraper
   
-  
+  doc = Nokogiri::HTML(open(""))
   
   def print_courses
     self.make_courses
